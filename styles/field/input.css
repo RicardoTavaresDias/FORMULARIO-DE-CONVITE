@@ -1,0 +1,23 @@
+
+/* input[type=text] { */
+
+input, textarea {
+  background-color: var(--input-base);
+  border: 0.06rem solid var(--input-stroke);
+  font: var(--text-open-md);
+
+  height: 3rem; /*48px*/
+  border-radius: 0.5rem; /*8px*/
+  padding-left: 1rem; /*16px*/
+  
+}
+
+textarea {
+  padding-top: 1rem; /*16px*/
+  height: 8.56rem; /*137px*/
+}
+
+input[type=date] {
+  color: var(--input-placeholder);
+  font: var(--text-open-md);
+}

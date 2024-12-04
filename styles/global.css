@@ -41,8 +41,16 @@
 
 /* FONTES */
 --font-open: "Open Sans", sans-serif;
+--text-open-md: 400 1rem var(--font-open);
+--text-open-sm: 400 0.8rem var(--font-open);
+--text-open-xs: 400 0.7rem var(--font-open);
+
 --font-baloo: "Baloo 2", sans-serif;
+--text-baloo-md: 800 1.7rem var(--font-baloo);
+--text-baloo-sm: 800 1.1rem var(--font-baloo);
+
 --font-Leckerli: "Leckerli One", cursive;
+--text-Leckerli: 400 2.5rem var(--font-Leckerli);
 
 }
 

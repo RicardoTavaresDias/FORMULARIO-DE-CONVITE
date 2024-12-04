@@ -1,0 +1,50 @@
+
+#container {
+  display: grid;
+  grid-template-columns: 31.25% 64.06%;
+  justify-content: center;
+
+  /* Aqui vai travar o aside no lugar */
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--shape-background);
+}
+
+aside {
+  background-image: url(../assets/Background.png);
+  background-size: cover;
+  background-position: 100%;
+  overflow: hidden;
+  margin: 1.25rem 1.8rem 1.25rem 1.25rem;
+  border-radius: 0.7rem;
+
+  & div {
+
+    & img {
+      width: 2.8rem;
+      margin: 2rem 0rem 0.6rem 2rem;
+    }
+
+    & div div{
+      padding-inline: 2rem;
+
+      & strong {
+        color: var(--pink);
+        font: var(--text-Leckerli)
+      }
+      & p {
+        color: var(--text-heading);
+        font: var(--text-open-md);
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}
+
+main {
+  background-color: var(--shape-body);
+  overflow: auto;
+
+  margin-top: 6rem;
+  border-radius: 0.7rem;
+}

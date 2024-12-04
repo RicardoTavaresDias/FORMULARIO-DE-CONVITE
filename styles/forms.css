@@ -1,0 +1,82 @@
+
+.conteiner-main {
+  margin-top: 5rem; /*80px*/
+  & h1 {
+    color: var(--text-heading);
+    font: var(--text-baloo-md);
+    padding-inline: 8.12rem; /*129px*/
+  }
+}
+
+fieldset {
+  border: none;
+  width: 17.5rem; /*280px*/
+
+  margin-inline: 8.12rem ; /*129px*/
+  margin-top: 2.5rem; /*40px*/
+  display: grid;
+  gap: 1rem; /*16px*/
+
+  & div svg {
+    stroke: var(--input-placeholder);
+  }
+
+  & > div:nth-child(1) {
+    /* background-color: yellow; */
+
+    display: flex;
+    gap: 0.75rem; /*12px*/
+
+    span {
+      align-self: center;
+      font: var(--text-baloo-sm);
+      color: var(--text-heading);
+    }
+  }
+}
+
+label {
+  font: var(--text-open-sm);
+  color: var(--text-body);
+}
+
+.conteiner-eventos {
+  /* background-color: white; */
+
+  display: grid;
+  grid-template-columns: 17.5rem 17.5rem; /*280px 280px*/
+  grid-template-areas: "titulo titulo"
+                        "inicio fim"
+                        "tipo local"
+                        "descricao descricao";
+  gap: 1rem; /*16px*/
+    
+    & div:nth-child(1){
+      grid-area: titulo;
+    }
+
+    & div:nth-child(2){
+      grid-area: inicio;
+    }
+
+    & div:nth-child(3){
+      grid-area: fim;
+    }
+
+    & div:nth-child(4){
+      grid-area: tipo;
+    }
+
+    & div:nth-child(5){
+      grid-area: local;
+    }
+
+    & div:nth-child(6){
+      grid-area: descricao;
+    }
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}

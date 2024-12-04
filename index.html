@@ -53,9 +53,56 @@
     <!-- MAIN -->
     <main>
 
-      <div class="contsiner-main">
+      <div class="conteiner-main">
         
-        <strong>Crie seu convite</strong>
+        <h1>Crie seu convite</h1>
+
+        <form method="post" enctype="multipart/form-data">
+
+          <fieldset class="fiel-info">
+            
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg> 
+              <span>Sobre o evento</span>
+            </div>
+
+            <div class="conteiner-eventos">
+
+              <div class="input-involved flex-col">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Nome do evento">
+              </div>
+
+              <div class="input-involved flex-col">
+                  <label for="inicio">Inicio</label>
+                  <input type="date" name="inicio" id="inicio" lang="pt-br">
+              </div>
+
+              <div class="input-involved flex-col">
+                <label for="fim">Final</label>
+                <input type="date" name="fim" id="fim" lang="pt-br">
+              </div>
+
+              <div class="input-involved flex-col">
+                <label for="tipo">Tipo</label>
+                <input type="text" name="tipo" id="tipo">
+              </div>
+
+              <div class="input-involved flex-col">
+                <label for="local">Local</label>
+                <input type="text" name="local" id="local" placeholder="Link ou endereço">
+              </div>
+
+              <div class="textarea-involved flex-col">
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
+
+            </div>
+
+          </fieldset>
+
+        </form>
         
       </div>
 

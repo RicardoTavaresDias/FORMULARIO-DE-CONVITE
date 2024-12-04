@@ -192,6 +192,7 @@
   justify-content: center;
   gap: 7px; /*7px*/
 
+
   & input[type=radio] {
     /*Remove formato roginal do html e dar liberadade realiar no CSS*/
     appearance: none; 
@@ -212,7 +213,7 @@
     &:checked {
       border: 1px solid var(--input-base);
       background-color: var(--input-stroke);
-    }
+    } 
   }
 
     & .escuro {

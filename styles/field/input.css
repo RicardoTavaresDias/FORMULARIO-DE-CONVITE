@@ -5,21 +5,36 @@ input, textarea {
   background-color: var(--input-base);
   border: 0.06rem solid var(--input-stroke);
   font: var(--text-open-md);
-
+  color: var(--input-placeholder);
   height: 3rem; /*48px*/
   border-radius: 0.5rem; /*8px*/
   padding-left: 1rem; /*16px*/
   
+  &:focus {
+    outline: 1px solid var(--brand-light);
+  }
 }
+
 
 textarea {
   padding-top: 1rem; /*16px*/
   height: 8.56rem; /*137px*/
+  color: var(--input-placeholder);
+
+  &:focus {
+    outline: 1px solid var(--brand-light);
+  }
+  
 }
 
 input[type=date] {
   color: var(--input-placeholder);
   font: var(--text-open-md);
+}
+
+/* removendo focus no radio da imagens da tema de evento */
+input[type=radio]:focus {
+  outline: none;
 }
 
 #foto-capa {

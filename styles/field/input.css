@@ -21,3 +21,56 @@ input[type=date] {
   color: var(--input-placeholder);
   font: var(--text-open-md);
 }
+
+#foto-capa {
+  /* border: 2px solid red; */
+}
+
+
+/* Foto de capa input file */
+.conteiner-estilo-foto {
+  display: flex;
+  
+  
+  .foto-capa-involved {
+    background-color: var(--shape-bory);
+    width: 23rem; /*368px*/
+    height: 3rem; /*48px*/
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /*12px*/
+    
+
+    .foto-capa {
+  /* border: 2px solid blue; */
+
+      position: relative;
+      width: 7.438rem; /*119px*/
+      height: 2.5rem; /*40px*/
+      border-radius: 0.5rem; /*8px*/
+      background-color: var(--shape-button);
+      background-image: url(../../assets/icon/upload.svg);
+      background-size: 1rem; /*16px*/
+      background-repeat: no-repeat;
+      background-position: 12%;
+      
+      input {
+        /* background-color: red; */
+        position: absolute;
+        opacity: 0;
+      }
+
+      span {
+        /* border: 2px solid rebeccapurple; */
+
+        height: 2.375rem; /*38px*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1.25rem; /*20px*/
+        font: var(--text-open-sm);
+        color: var(--text-heading);        
+      }
+    }
+  }
+}

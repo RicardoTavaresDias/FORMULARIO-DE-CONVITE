@@ -1,8 +1,10 @@
 
+/* Personalização */
+
 .container-personalizacao {
   /* background-color: yellow; */
 
-  width: 560px;
+  width: 560px; /*560px*/
 
   display: flex;
   justify-content: space-between;
@@ -10,10 +12,10 @@
   & input[type=radio] {
     /*Remove formato roginal do html e dar liberadade realiar no CSS*/
     appearance: none; 
-    width: 40px;
-    height: 40px;
+    width: 40px; /*40px*/
+    height: 40px; /*40px*/
     border-radius: 50%;
-    border: 6px solid var(--shape-button);
+    border: 0.37rem solid var(--shape-button);
     /* outline: 2px solid var(--brand-light); */
 
     &:checked {
@@ -22,7 +24,8 @@
   }
 }
 
-input[type=radio] {
+/* Galeria de cores da personalização */
+.container-personalizacao input[type=radio] {
 
   &:nth-child(1){
     background-color: var(--brand-light);
@@ -58,3 +61,168 @@ input[type=radio] {
     background-color: var(--cyan);
   }
 }
+
+
+
+/* EVENTO */
+
+.conteiner-evento {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 8px; /*8px*/
+}
+
+
+.conteiner-evento div {
+  background-color: var(--input-stroke);
+
+  width: 134px; /*134px*/
+  height: 103px; /*103px*/
+  border-radius: 8px; /*8px*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & img {
+    width: 126px; /*126px*/
+    height: 64px; /*64px*/
+  }
+
+  & input[type=radio] {
+    /*Remove formato roginal do html e dar liberadade realiar no CSS*/
+    appearance: none; 
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 126px; /*126px*/
+    height: 64px; /*64px*/
+    margin: 4px 4px 8px 4px; /*4px 4px 8px 4px*/
+  }
+
+  &:has(:checked), div{
+    outline: 2px solid var(--brand-light);
+  }
+}
+
+/* Galeria de imagens do eventos */
+.conteiner-evento  {
+
+  & div:nth-child(1) input[type=radio] {
+    background-image: url(../../assets/img/Aniverasario.png);
+  }
+
+  & div:nth-child(2) input[type=radio] {
+    background-image: url(../../assets/img/infantil.png);
+  }
+
+  & div:nth-child(3) input[type=radio] {
+    background-image: url(../../assets/img/formatura.png);
+  }
+
+  & div:nth-child(4) input[type=radio] {
+    background-image: url(../../assets/img/casamento.png);
+  }
+
+  & div:nth-child(5) input[type=radio] {
+    background-image: url(../../assets/img/cha-de-bebe.png);
+  }
+   
+  & div:nth-child(6) input[type=radio] {
+    background-image: url(../../assets/img/cha-de-panela.png);
+  }
+
+  & div:nth-child(7) input[type=radio] {
+    background-image: url(../../assets/img/carnaval.png);
+  }
+
+  & div:nth-child(8) input[type=radio] {
+    background-image: url(../../assets/img/pascoa.png);
+  }
+
+  & div:nth-child(9) input[type=radio] {
+    background-image: url(../../assets/img/sao-joao.png);
+  }
+
+  & div:nth-child(10) input[type=radio] {
+    background-image: url(../../assets/img/halloween.png);
+  }
+
+  & div:nth-child(11) input[type=radio] {
+    background-image: url(../../assets/img/natal.png);
+  }
+
+  & div:nth-child(12) input[type=radio] {
+    background-image: url(../../assets/img/outros.png);
+  }
+}
+
+
+
+
+/* Estilo */
+
+#estilo {
+  /* border: 2px solid red; */
+
+  width: 176px; /*176px*/
+}
+
+.estilo-involved {
+  /* border: 2px solid yellow; */
+
+  display: flex;
+  align-items: center;
+  gap: 12px; /*12px*/
+  margin-top: 12px; /*12px*/
+}
+
+
+.estilo {
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  border-radius: 999px; /**/
+  width: 64px; /*64px*/ 
+  height: 32px; /*32px*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px; /*7px*/
+
+  & input[type=radio] {
+    /*Remove formato roginal do html e dar liberadade realiar no CSS*/
+    appearance: none; 
+    background-color: var(--input-stroke);
+    
+    width: 24px; /*24px*/
+    height: 24px; /*24px*/
+    border-radius: 50%;
+  }
+}
+
+/* Botao movimentar um lado para outro com INPUT RADIO */
+.conteiner-estilo-foto .estilo { 
+  & .claro {
+    background-color: var(--input-base);
+    border: none;
+
+    &:checked {
+      border: 1px solid var(--input-base);
+      background-color: var(--input-stroke);
+    }
+  }
+
+    & .escuro {
+      border: none;
+      background-color: var(--input-base);
+
+      &:checked {
+        background-color: var(--input-stroke);
+        border: 1px solid var(--input-base);
+      }
+    }
+}
+

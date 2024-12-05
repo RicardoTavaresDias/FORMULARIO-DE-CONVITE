@@ -206,7 +206,7 @@
 
 /* Botao movimentar um lado para outro com INPUT RADIO */
 .conteiner-estilo-foto .estilo { 
-  & .claro {
+  & #claro {
     background-color: var(--input-base);
     border: none;
 
@@ -216,14 +216,13 @@
     } 
   }
 
-    & .escuro {
+    & #escuro {
       border: none;
       background-color: var(--input-base);
 
       &:checked {
-        background-color: var(--input-stroke);
-        border: 1px solid var(--input-base);
+        background-color: var(--brand-light);
+        border: 1px solid var(--input-base);       
       }
     }
 }
-

@@ -86,7 +86,10 @@
 
               <div class="input-involved flex-col">
                 <label for="tipo">Tipo</label>
-                <input type="text" name="tipo" id="tipo">
+                  <div class="fundo-tipo">
+                    <input type="radio" class="evento-tipo-primario" name="tipo" id="tipo" checked>
+                    <input type="radio" class="evento-tipo-segundario" name="tipo" id="tipo">
+                </div>
               </div>
 
               <div class="input-involved flex-col">
@@ -137,7 +140,7 @@
             <div class="conteiner-evento">
 
                 <div>
-                  <input type="radio" name="evento" id="aniverario" value="aniverario" checked>
+                  <input type="radio" name="evento" id="aniverario" value="aniverario" >
                   <label for="aniverario">Aniversário</label>
                 </div>
 
@@ -208,10 +211,11 @@
                <div class="estilo-involved">
                 <div class="estilo">
                   <input type="radio" name="estilo" id="escuro" value="escuro" checked>
-                  <input type="radio" name="estilo" id="claro" value="claro">
+                  <input type="radio" name="estilo" id="claro" value="claro" >
+                  <!-- <label name="estilo" class="teste" for="estilo"></label> -->
                 </div>
 
-                <label class="teste" for="estilo">Escuro</label>
+                
 
               </div>
             </div>

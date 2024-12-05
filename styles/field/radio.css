@@ -1,4 +1,78 @@
 
+/*  Sobre e Evento  */
+
+.fundo-tipo {
+  width: 272px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+}
+
+.evento-tipo-primario, .evento-tipo-segundario{
+  /*Remove formato roginal do html e dar liberadade realiar no CSS*/
+  appearance: none;
+  border: none;
+  width: 129px;
+  height: 40px;
+  border-radius: 5px;
+  /* background-color: var(--shape-button); */
+  margin-left: 2.5px;
+  margin-top: 3px;
+}
+
+.evento-tipo-primario{
+  background-image: url(../../assets/icon/building-2.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 12%;
+  background-color: var(--input-base);
+  position: relative;
+   
+  &::before {
+    content: "Presencial";
+    position: absolute;
+    top:23%;
+    left: 30%;
+    font: var(--text-open-sm);
+    color: var(--input-placeholder);  
+  } 
+  
+  &:checked {
+    background-image: url(../../assets/icon/building-2-azul.svg);
+    background-color: var(--shape-button);
+  }
+}
+
+
+.evento-tipo-segundario{
+  background-image: url(../../assets/icon/video.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 25%;
+  position: relative;
+  
+   
+  &::before {
+    content: "Online";
+    position: absolute;
+    top:23%;
+    left: 40%;
+    font: var(--text-open-sm);
+    color: var(--input-placeholder);  
+  } 
+
+  &:checked {
+    background-image: url(../../assets/icon/video-azul.svg);
+    background-color: var(--shape-button);
+  }
+}
+
+
+
+
+
+
 /* Personalização */
 
 .container-personalizacao {
@@ -211,8 +285,15 @@
     border: none;
 
     &:checked {
-      border: 1px solid var(--input-base);
-      background-color: var(--input-stroke);
+        background-color: var(--brand-light);
+        border: 1px solid var(--input-base);
+
+      &::before {
+        content: "Claro";
+        margin-left: 20px;
+        color: var(--text-heading);
+        font: var(--text-open-sm);
+      }
     } 
   }
 
@@ -221,8 +302,21 @@
       background-color: var(--input-base);
 
       &:checked {
-        background-color: var(--brand-light);
-        border: 1px solid var(--input-base);       
+        border: 1px solid var(--input-base);
+        background-color: var(--input-stroke);
+
+        &::before {
+          content: "Escuro";
+          margin-left: 50px;
+          color: var(--text-heading);
+          font: var(--text-open-sm);
+        }
       }
     }
+    
 }
+
+/* .estilo label {
+  position: absolute;
+  left: 40%;
+} */

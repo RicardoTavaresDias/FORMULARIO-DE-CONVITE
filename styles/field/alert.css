@@ -62,12 +62,3 @@
   } */
 
 }
-
-/* input[type=email]:invalid:not(:placeholder-shown) */
-
-/* & .input-involved:nth-child(1):has(:invalid), .input-involved:nth-child(3):has(:invalid){
-
-  & input[type=text]{
-    outline: 1px solid var(--danger);
-  }
-} */

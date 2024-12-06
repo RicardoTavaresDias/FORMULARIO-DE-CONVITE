@@ -78,7 +78,7 @@
 .container-personalizacao {
   /* background-color: yellow; */
 
-  width: 560px; /*560px*/
+  width: 571px; /*560px*/
 
   display: flex;
   justify-content: space-between;
@@ -141,10 +141,12 @@
 /* EVENTO */
 
 .conteiner-evento {
+  /* background-color: yellow; */
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 8px; /*8px*/
+  justify-items: center;
 }
 
 

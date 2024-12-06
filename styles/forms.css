@@ -40,7 +40,7 @@ label {
   color: var(--text-body);
 }
 
-.conteiner-eventos {
+.conteiner-eventos, .conteiner-contato {
   /* background-color: white; */
 
   display: grid;

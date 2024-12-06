@@ -31,9 +31,9 @@
         outline: 1px solid var(--brand-light);
       }
 
-      &:focus {
+      /* &:focus {
         outline: 1px solid var(--brand-light);
-      }
+      } */
 
     }
 

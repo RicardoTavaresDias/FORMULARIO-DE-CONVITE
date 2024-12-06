@@ -31,6 +31,10 @@
         outline: 1px solid var(--brand-light);
       }
 
+      &:focus {
+        outline: 1px solid var(--brand-light);
+      }
+
     }
 
     & label {

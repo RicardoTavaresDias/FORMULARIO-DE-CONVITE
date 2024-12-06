@@ -92,18 +92,3 @@ input[type=radio]:focus {
   }
 }
 
-
-
-/* Dados de Contato */
-
-.conteiner-contato .alert {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  /* display: none; */
-
-  & span {
-    color: var(--danger);
-    font: var(--text-open-xs);
-  }
-}

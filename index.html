@@ -254,7 +254,7 @@
 
               <div class="input-involved flex-col">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome completo">
+                <input type="text" id="nome" name="nome" placeholder="Nome completo" kana required>
 
                 <div class="alert">
                   <img src="./assets/icon/circle-alert.svg" alt="icon alerta">
@@ -264,12 +264,22 @@
 
               <div class="input-involved flex-col">
                   <label for="email">E-mail</label>
-                  <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                  <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+
+                  <div class="alert">
+                    <img src="./assets/icon/circle-alert.svg" alt="icon alerta">
+                    <span>Campo obrigatório</span>
+                  </div>
               </div>
 
               <div class="input-involved flex-col">
                 <label for="telefone">Telefone</label>
-                <input type="telefone" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+                <input type="text" name="telefone" id="telefone" placeholder="(99) 99999-9999" required>
+
+                <div class="alert">
+                  <img src="./assets/icon/circle-alert.svg" alt="icon alerta">
+                  <span>Campo obrigatório</span>
+                </div>
               </div>
               
             </div>
@@ -282,7 +292,7 @@
               <div class="termo">
 
                 <div>
-                  <input type="checkbox" name="condicoes" id="condicoes">
+                  <input type="checkbox" name="condicoes" id="condicoes" checked>
                   <label for="condicoes">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
                 </div>
 

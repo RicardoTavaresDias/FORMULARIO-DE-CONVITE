@@ -13,6 +13,7 @@
     width: 177px;
     height: 48px;
     border-radius: 8px;
+    cursor: pointer;
 
     background-color: var(--brand-dark);
     border: none;
@@ -26,6 +27,10 @@
       font: var(--text-open-md);
       color: var(--text-heading);
       margin-left: 28px;
+    }
+
+    &:focus {
+      outline: 1px solid var(--brand-light);
     }
     
   }

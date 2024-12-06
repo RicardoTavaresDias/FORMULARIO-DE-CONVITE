@@ -5,34 +5,69 @@
   display: flex;
   align-items: center;
   gap: 0.5rem; /*8px*/
-  display: none;
+  
+  & img {
+    display: none;
+  }
 
-  & span {
+  & span::after {
+    content: "Campo obrigatório";
     color: var(--danger);
     font: var(--text-open-xs);
   }
+
 }
 
+
+/* Validação de erro nos inputs */
 .conteiner-contato {
-
-  & .input-involved:nth-child(1):has(:invalid), .input-involved:nth-child(3):has(:invalid){
-    & .alert {
-      display: inherit;
+  & .input-involved:nth-child(2) { 
+    /* Validação do E-mail, quando tiver placeholde na pagina inicial não executar */
+    & input[type=email]:invalid:not(:placeholder-shown){
+      
+      outline: 1px solid var(--danger);
     }
 
-    & input[type=text]{
-      outline: 1px solid var(--danger);
+    /* validação do e-mail, se tiver sem @ apresentar o erro */
+    & input[type=email]:invalid:not(:placeholder-shown) + .alert {
+      
+      & img {
+        display: inline;
+      }
+      
+      & span::after {
+        content: "E-mail Incorreto";
+      }
     }
   }
 
-  & .input-involved:nth-child(2):has(:invalid) {
-    & .alert {
-      display: inherit;
-    }
+  /* Validação do Text, se tiver vazio executar o erro */
+  /* & .input-involved:nth-child(1), .input-involved:nth-child(3) {
+    & input[type=text]:invalid {
 
-    & input[type=email]{
       outline: 1px solid var(--danger);
+
+    }   
+    
+    & input[type=text]:invalid + .alert{
+      
+      & img {
+        display: inline;
+      }
+
+      & span::after {
+        content: "Compo vazio";
+      }
     }
-  }
+  } */
+
 }
 
+/* input[type=email]:invalid:not(:placeholder-shown) */
+
+/* & .input-involved:nth-child(1):has(:invalid), .input-involved:nth-child(3):has(:invalid){
+
+  & input[type=text]{
+    outline: 1px solid var(--danger);
+  }
+} */

@@ -2,9 +2,9 @@
 /*  Sobre e Evento  */
 
 .fundo-tipo {
-  width: 272px;
-  height: 48px;
-  border-radius: 8px;
+  width: 17rem; /*272px*/
+  height: 3rem; /*48px*/
+  border-radius: 0.5rem; /*8px*/
   background-color: var(--input-base);
   border: 1px solid var(--input-stroke);
 }
@@ -13,18 +13,18 @@
   /*Remove formato roginal do html e dar liberadade realiar no CSS*/
   appearance: none;
   border: none;
-  width: 129px;
-  height: 40px;
+  width: 8.063rem; /*129px*/
+  height: 2.5rem; /*40px*/
   border-radius: 5px;
   /* background-color: var(--shape-button); */
-  margin-left: 2.5px;
-  margin-top: 3px;
+  margin-left: 0.156rem; /*2.5px*/
+  margin-top: 0.188rem; /*3px*/
 }
 
 .evento-tipo-primario{
   background-image: url(../../assets/icon/building-2.svg);
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 1rem; /*16px*/
   background-position: 12%;
   background-color: var(--input-base);
   position: relative;
@@ -48,7 +48,7 @@
 .evento-tipo-segundario{
   background-image: url(../../assets/icon/video.svg);
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 1rem; /*16px*/
   background-position: 25%;
   position: relative;
   
@@ -78,7 +78,7 @@
 .container-personalizacao {
   /* background-color: yellow; */
 
-  width: 571px; /*560px*/
+  width: 35.688rem; /*571px*/
 
   display: flex;
   justify-content: space-between;
@@ -86,10 +86,10 @@
   & input[type=radio] {
     /*Remove formato roginal do html e dar liberadade realiar no CSS*/
     appearance: none; 
-    width: 40px; /*40px*/
-    height: 40px; /*40px*/
+    width: 2.5rem; /*40px*/
+    height: 2.5rem; /*40px*/
     border-radius: 50%;
-    border: 0.37rem solid var(--shape-button);
+    border: 6px solid var(--shape-button);
     /* outline: 2px solid var(--brand-light); */
 
     &:checked {
@@ -145,7 +145,7 @@
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 8px; /*8px*/
+  row-gap: 0.5rem; /*8px*/
   justify-items: center;
 }
 
@@ -153,17 +153,17 @@
 .conteiner-evento div {
   background-color: var(--input-stroke);
 
-  width: 134px; /*134px*/
-  height: 103px; /*103px*/
-  border-radius: 8px; /*8px*/
+  width: 8.375rem; /*134px*/
+  height: 6.438rem; /*103px*/
+  border-radius: 0.5rem; /*8px*/
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   & img {
-    width: 126px; /*126px*/
-    height: 64px; /*64px*/
+    width: 7.875rem; /*126px*/
+    height: 4rem; /*64px*/
   }
 
   & input[type=radio] {
@@ -173,9 +173,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    width: 126px; /*126px*/
-    height: 64px; /*64px*/
-    margin: 4px 4px 8px 4px; /*4px 4px 8px 4px*/
+    width: 7.875rem; /*126px*/
+    height: 4rem; /*64px*/
+    margin: 0.25rem 0.25rem 0.5rem 0.25rem; /*4px 4px 8px 4px*/
   }
 
   &:has(:checked), div{
@@ -243,7 +243,8 @@
 #estilo {
   /* border: 2px solid red; */
 
-  width: 176px; /*176px*/
+  margin-top: 1.75rem; /*28px*/
+  width: 11rem; /*176px*/
 }
 
 .estilo-involved {
@@ -251,8 +252,8 @@
 
   display: flex;
   align-items: center;
-  gap: 12px; /*12px*/
-  margin-top: 12px; /*12px*/
+  gap: 0.75rem; /*12px*/
+  margin-top: 0.75rem; /*12px*/
 }
 
 
@@ -260,13 +261,13 @@
   border: 1px solid var(--input-stroke);
   background-color: var(--input-base);
   border-radius: 999px; /**/
-  width: 64px; /*64px*/ 
-  height: 32px; /*32px*/
+  width: 4rem; /*64px*/ 
+  height: 2rem; /*32px*/
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px; /*7px*/
+  gap: 0.438rem; /*7px*/
 
 
   & input[type=radio] {
@@ -274,18 +275,25 @@
     appearance: none; 
     background-color: var(--input-stroke);
     
-    width: 24px; /*24px*/
-    height: 24px; /*24px*/
+    width: 1.5rem; /*24px*/
+    height: 1.5rem; /*24px*/
     border-radius: 50%;
   }
 }
 
 /* FOTO DE CAPA */
 
+#foto-capa{
+  /* border: 2px solid pink; */
+
+  margin-top: 1.75rem; /*28px*/
+}
+
+
 .foto-capa-involved {
   /* border: 2px solid pink; */
   
-  margin-top: 6px;
+  margin-top: 0.375rem; /*6px*/
 }
 
 /* Botao movimentar um lado para outro com INPUT RADIO */
@@ -300,7 +308,7 @@
 
       &::before {
         content: "Claro";
-        margin-left: 20px;
+        margin-left: 1.25rem; /*20px*/
         color: var(--text-heading);
         font: var(--text-open-sm);
       }
@@ -317,7 +325,7 @@
 
         &::before {
           content: "Escuro";
-          margin-left: 50px;
+          margin-left: 3.125rem; /**/
           color: var(--text-heading);
           font: var(--text-open-sm);
         }
@@ -325,8 +333,3 @@
     }
     
 }
-
-/* .estilo label {
-  position: absolute;
-  left: 40%;
-} */

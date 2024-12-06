@@ -2,17 +2,17 @@
 .container-termo .button{
   /* background-color: white; */
   
-  margin-top: 48px;
-  margin-bottom: 80px;
+  margin-top: 3rem; /*48px*/
+  margin-bottom: 5rem; /*80px*/
   display: flex;
   justify-content: flex-end;
 
   & button {
     /*Remove formato roginal do html e dar liberadade realiar no CSS*/
     appearance: none;
-    width: 177px;
-    height: 48px;
-    border-radius: 8px;
+    width: 11.063rem; /*177px*/
+    height: 3rem; /*48px*/
+    border-radius: 0.5rem; /*8px*/
     cursor: pointer;
 
     background-color: var(--brand-dark);
@@ -20,13 +20,13 @@
     background-image: url(../../assets/icon/ticket.svg);
     background-repeat: no-repeat;
     background-position: 13%;
-    background-size: 20px;
+    background-size: 1.25rem; /*20px*/
 
     &::before {
       content: "Gerar convite";
       font: var(--text-open-md);
       color: var(--text-heading);
-      margin-left: 28px;
+      margin-left: 1.75rem; /*28px*/
     }
 
     &:focus {

@@ -33,7 +33,7 @@ input[type=date] {
   font: var(--text-open-md);
   
   &::-webkit-calendar-picker-indicator {
-    width: 155px;
+    width: 9.688rem; /*155px*/
     opacity: 0;
   }
 }

@@ -35,6 +35,11 @@
 
     & label {
       /* border: 2px solid yellow; */
-      
+      font: var(--text-open-sm);
+      color: var(--text-body);
+
+      & strong {
+        color: var(--brand-light);
+      }
     }
 }

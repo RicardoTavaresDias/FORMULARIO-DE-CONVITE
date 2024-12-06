@@ -27,7 +27,7 @@ fieldset {
     display: flex;
     gap: 0.75rem; /*12px*/
 
-    span {
+    legend {
       align-self: center;
       font: var(--text-baloo-sm);
       color: var(--text-heading);

@@ -236,7 +236,7 @@
 
 
 
-/* Estilo */
+/* ESTILO */
 
 #estilo {
   /* border: 2px solid red; */
@@ -276,6 +276,14 @@
     height: 24px; /*24px*/
     border-radius: 50%;
   }
+}
+
+/* FOTO DE CAPA */
+
+.foto-capa-involved {
+  /* border: 2px solid pink; */
+  
+  margin-top: 6px;
 }
 
 /* Botao movimentar um lado para outro com INPUT RADIO */

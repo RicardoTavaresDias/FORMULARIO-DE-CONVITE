@@ -40,25 +40,16 @@
       }
     }
   }
-
-  /* Validação do Text, se tiver vazio executar o erro */
-  /* & .input-involved:nth-child(1), .input-involved:nth-child(3) {
-    & input[type=text]:invalid {
-
-      outline: 1px solid var(--danger);
-
-    }   
-    
-    & input[type=text]:invalid + .alert{
-      
-      & img {
-        display: inline;
-      }
-
-      & span::after {
-        content: "Compo vazio";
-      }
-    }
-  } */
-
 }
+
+
+/* Exemplo de validado no campo com input E-mail*/
+/* #email:valid {
+  background-color: green;
+} */
+
+
+/* Exemplo campo invalido com input E-mail*/
+/* #email:invalid {
+  background-color: red;
+} */
